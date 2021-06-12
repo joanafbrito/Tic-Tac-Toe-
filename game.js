@@ -1,17 +1,15 @@
 class Game {
-  constructor() {
+  constructor(currentPlayer) {
     this.playerOne = new Player("player 1","star");
     this.playerTwo = new Player("player 2","heart");
     this.board = new Array(9);
-  }
-  whoisPlaying() {
-    if click
+    this.currentPlayer = currrentPlayer;
   }
 
 }
-// A way to keep track of the data for the game board
-// A way to keep track of which player’s turn it currently is
-// as soon as the click happen change the player.
+// A way to keep track of the data for the game board ( this.board)
+// A way to keep track of which player’s turn it currently is (this.currentPlayer)
+// ****as soon as the click happen change the player.***
 // A way to check the Game’s board data for win conditions
 // A way to detect when a game is a draw (no one has won)
 // // // A way to reset the Game’s board to begin a new game

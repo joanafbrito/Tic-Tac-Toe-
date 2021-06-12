@@ -10,3 +10,17 @@
 // Display the Player data in the sidebars
 // Automatically reset the game board to allow for a new game to be played after the previous game is won
 // Persist Player data using local storage (number of wins should persist across page refreshes)
+var buttons = document.querySelectorAll(".buttons button");
+
+for (var i = 0; i < buttons.length; i++) {
+  var button = buttons[i];
+  button.addEventListener("click",function(event) {
+    event.preventDefault();
+
+    // console.log(event.target.getAttribute("id"));
+    var index = parseInt(event.target.getAttribute("id").replace("button",""));
+    // console.log (index);
+    gameOne.board[index]=
+  });
+}
+var gameOne = new Game (currentPlayer);
