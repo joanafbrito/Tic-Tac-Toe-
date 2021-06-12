@@ -1,0 +1,54 @@
+main {
+  display:flex;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh
+
+}
+.player {
+  /* justify-content:flex-start; */
+  padding-top: 200px;
+  background-color: blue;
+  width: 25vw;
+
+}
+
+.game-board {
+  /* justify-content: center; */
+  padding-top: 200px;
+  width: 50vw;
+
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.buttons button {
+ width: 16vw;
+ height: 16vh;
+ margin: 0;
+ padding: 0;
+ border: 0.2vw solid black;
+ background-color: #ffffff;
+
+}
+
+.buttons button.no-top {
+  border-top-color: #ffffff;
+}
+
+.buttons button.no-left {
+  border-left-color: #ffffff;
+}
+
+.buttons button.no-right {
+  border-right-color: #ffffff;
+}
+
+.buttons button.no-bottom {
+  border-bottom-color: #ffffff;
+}
