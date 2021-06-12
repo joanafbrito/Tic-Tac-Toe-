@@ -2,8 +2,6 @@
 // This workflow is not required, but will help you meet the overall requirements of the project.
 //
 // Plan out the HTML layout (colors and icons do not need to match, but overall layout should closely match the demo video)
-// Create the Player class
-// Create the Game class
 // Make game fully playable without the DOM (manually updating the Game.board data, etc, from your console) to force yourself to think data-model-first
 // Create central game board on the DOM
 // Connect Game data model to the DOM
@@ -20,7 +18,12 @@ for (var i = 0; i < buttons.length; i++) {
     // console.log(event.target.getAttribute("id"));
     var index = parseInt(event.target.getAttribute("id").replace("button",""));
     // console.log (index);
-    gameOne.board[index]=
+    // gameOne.board[index]=
+gameOne.getCurrentPlayer(1);
   });
 }
-var gameOne = new Game (currentPlayer);
+var gameOne = new Game();
+gameOne.getCurrentPlayer(1);
+
+var winner
+if(playerOne.token === [0,4,8] || [2,4,6] || [1,4,7] || [3,4,5] || [6,7,8] || [0,1,2]||[0,3,6] || [2,5,8] )

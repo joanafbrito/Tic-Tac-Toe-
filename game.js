@@ -1,10 +1,18 @@
 class Game {
-  constructor(currentPlayer) {
+  constructor() {
     this.playerOne = new Player("player 1","star");
     this.playerTwo = new Player("player 2","heart");
     this.board = new Array(9);
-    this.currentPlayer = currrentPlayer;
+
   }
+  getCurrentPlayer(starter) {
+    if(starter === 1) {
+      this.currentPlayer = this.playerOne;
+    } else {
+      this.currentPlayer = this.playerTwo;
+    };
+  }
+
 
 }
 // A way to keep track of the data for the game board ( this.board)
