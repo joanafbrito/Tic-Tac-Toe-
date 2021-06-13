@@ -1,20 +1,35 @@
-main {
-  display:flex;
-  background-color: #ffffff;
+body {
+  background-color: hsla(50, 33%, 25%, .75);
   width: 100vw;
   height: 100vh
+  font-family: "Open Sans";
+  color: #ffffff;
+
+}
+
+main {
+  display:flex;
+  /* background-color: #ffffff; */
+  /* width: 100vw; */
+  /* height: 100vh */
+  font-family: "Open Sans"
 
 }
 .player {
-  /* justify-content:flex-start; */
   padding-top: 200px;
-  background-color: blue;
+  background-color: black;
   width: 25vw;
+  height: 100vh;
 
+}
+h1,
+h2 {
+  margin:75px;
+  text-align: center;
+  min-width: max-content;
 }
 
 .game-board {
-  /* justify-content: center; */
   padding-top: 200px;
   width: 50vw;
 
