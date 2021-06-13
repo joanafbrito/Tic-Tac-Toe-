@@ -1,7 +1,7 @@
 class Player {
   constructor(infoplayer, infoToken) {
     this.id = infoplayer;
-    this.token = `assets/${infoToken}.jpg`;
+    this.token = `assets/${infoToken}.svg`;
     this.wins = [];
   }
   saveWinsToStorage() {
