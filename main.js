@@ -25,5 +25,13 @@ gameOne.getCurrentPlayer(1);
 var gameOne = new Game();
 gameOne.getCurrentPlayer(1);
 
-var winner
-if(playerOne.token === [0,4,8] || [2,4,6] || [1,4,7] || [3,4,5] || [6,7,8] || [0,1,2]||[0,3,6] || [2,5,8] )
+// var winner- pseudocode.
+// if(playerOne.token === [0,4,8] || playerOne.token === [2,4,6] ||
+//    playerOne.token === [1,4,7] || playerOne.token === [3,4,5] ||
+//    playerOne.token === [6,7,8] || playerOne.token === [0,1,2] ||
+//    playerOne.token === [0,3,6] || playerOne.token ===[2,5,8]) {
+//
+//      return `${playerOne} is the Winner!`
+//    } else {
+//      gameOne.getCurrentPlayer();
+//    }
