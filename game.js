@@ -1,8 +1,8 @@
 class Game {
   constructor() {
-    this.playerOne = new Player("player 1","star");
-    this.playerTwo = new Player("player 2","heart");
-    this.currentPlayer = this.playerOne;
+    this.playerJedi = new Player("jedi","assets/logo_rebel.svg");
+    this.playerSith = new Player("sith","0");
+    this.currentPlayer = this.playerJedi;
     this.board = new Array(9);
     this.winningMoves = [[0, 1, 2], [3, 4, 5], [6, 7, 8],
                          [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -10,15 +10,15 @@ class Game {
 
   }
   runPlayerClick(clickedBtnIndex) {
-    // o index do botao clicado, vai ser o index da board- mesmo lugar
+
     // e nesse index vai ser passado o valor do current player name?
     this.board[clickedBtnIndex] = this.currentPlayer.name;
 
 
-    if(this.currentPlayer === this.playerOne) {
-      this.currentPlayer = this.playerTwo;
+    if(this.currentPlayer === this.playerJedi) {
+      this.currentPlayer = this.playerSith;
     } else {
-      this.currentPlayer = this.playerOne;
+      this.currentPlayer = this.playerJedi;
     };
   }
   addCurrentPlayerMoves() {
@@ -40,14 +40,9 @@ class Game {
 
     if(this.addCurrentPlayerMoves().length < 3) {
       return false;
-      // if has less than 3 moves there are no winning combos
+    }
 
-    } else if {
-      // go to the wiiningMoves array and loop into it and find each movecombos
-      // in each move combos i need to verify if my move is part of this combo( loop into the i)
-      // if i have 3 moves that are part of this combo
-      // i have a winner Combo.
-      for(var i = 0; i < this.winningMoves.legnth; i++) {
+    for(var i = 0; i < this.winningMoves.legnth; i++) {
         var winninComb = 0;
         // each this.winningMoves[i] = 3 moves;
         var moves = this.winningMoves[i];
@@ -55,6 +50,7 @@ class Game {
         for(var m = 0; m < moves.length; m++) {
           if(this.addCurrentPlayerMoves().includes(moves[m])) {
             winninComb++;
+
             if(winninComb === 3) {
               // we have a winner!
               return true;
@@ -63,14 +59,26 @@ class Game {
 
         }
       }
+
       return false;
+
+    }
+
+    startNewGame() {
+      if (this.winner) {
+        this.currentPlayer.addWin(this.board);
+        this.currentPlayer.saveWinsToStorage();
+      }
+      this.board = new Array(9);
+
+      // this.currentPlayer= how do i tell the computer who is the current player
+
+      // this.setFirstPlayer();
 
     }
 
   }
 
-
-}
 // A way to keep track of the data for the game board ( this.board)
 // A way to keep track of which player’s turn it currently is (this.currentPlayer)
 // ****as soon as the click happen change the player.***
