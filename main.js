@@ -12,6 +12,7 @@ var buttons = document.querySelectorAll(".buttons");
 // var btns = Array.from(buttons);- option but only for modern browsers.
 // --change the node list into one array.
 var btns = Array.prototype.slice.call(buttons);
+// var token =
 
 var game = new Game();
 
@@ -51,11 +52,11 @@ for (var i = 0; i < btns.length; i++) {
     // I'm tageting the id
     // console.log (index);
     // gameOne.board[index]=
-gameOne.runPlayerClick(1);
+// gameOne.runPlayerClick(1);
   });
 }
 
-gameOne.runPlayerClick(1);
+// gameOne.runPlayerClick(1);
 
 // var winner- pseudocode.
 // if(playerOne.token === [0,4,8] || playerOne.token === [2,4,6] ||
