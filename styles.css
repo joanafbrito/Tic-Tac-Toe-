@@ -13,7 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "StarJediRounded";
-  color: #ffffff;
+  color: #ffffffc7;
   margin: 0;
 
 }
@@ -44,11 +44,16 @@ h2 {
   margin:75px 0;
   text-align: center;
 }
+h2 {
+  font-size: 16px;
+}
 
 .player img {
   display: block;
   margin: auto;
+  margin-top: 25px;
   width: 175px;
+  /* size:90%; */
 
 }
 
@@ -77,12 +82,15 @@ h2 {
  height: 16vw;
  margin: 0;
  padding: 0;
- border: 0.2vw solid black;
+ border: 0.2vw solid #000000ad;
  background-color: transparent;
  min-width: 140px;
  min-height: 140px;
  max-width: 200px;
  max-height: 200px;
+ /* cursor: pointer; */
+ cursor: url("assets/lightsaber.ani"), default!important;
+
 
 
 }

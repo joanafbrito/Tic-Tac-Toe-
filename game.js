@@ -73,7 +73,7 @@ class Game {
 
       // this.currentPlayer= how do i tell the computer who is the current player
 
-      // this.setFirstPlayer();
+
 
     }
 
