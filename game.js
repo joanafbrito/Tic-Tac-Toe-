@@ -1,26 +1,30 @@
 class Game {
   constructor() {
     this.playerJedi = new Player("jedi","assets/logo_rebel.svg");
-    this.playerSith = new Player("sith","0");
-    this.currentPlayer = this.playerJedi;
+    this.playerSith = new Player("sith","assets/empire_logo.svg");
+    this.currentPlayer = null;
+    // this.currentPlayer = this.playerJedi;
     this.board = new Array(9);
     this.winningMoves = [[0, 1, 2], [3, 4, 5], [6, 7, 8],
                          [0, 3, 6], [1, 4, 7], [2, 5, 8],
                          [2, 4, 6], [0, 4, 8]];
-
   }
-  runPlayerClick(clickedBtnIndex) {
 
-    // e nesse index vai ser passado o valor do current player name?
-    this.board[clickedBtnIndex] = this.currentPlayer.name;
-
-
+  getCurrentPlayer() {
     if(this.currentPlayer === this.playerJedi) {
       this.currentPlayer = this.playerSith;
     } else {
       this.currentPlayer = this.playerJedi;
     };
   }
+
+  runPlayerClick(clickedBtnIndex) {
+    // e nesse index vai ser passado o valor do current player name?
+    this.board[clickedBtnIndex] = this.currentPlayer.name;
+
+    this.current = this.getCurrentPlayer();
+  }
+
   addCurrentPlayerMoves() {
     var currentPlayerMoves = [];
 
@@ -70,10 +74,10 @@ class Game {
         this.currentPlayer.saveWinsToStorage();
       }
       this.board = new Array(9);
+      this.getCurrentPlayer();
 
-      // this.currentPlayer= how do i tell the computer who is the current player
 
-
+  // this.setFirstPlayer();
 
     }
 

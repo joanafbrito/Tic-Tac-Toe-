@@ -9,12 +9,15 @@
 // Automatically reset the game board to allow for a new game to be played after the previous game is won
 // Persist Player data using local storage (number of wins should persist across page refreshes)
 var buttons = document.querySelectorAll(".buttons");
+var playerTurn = document.getElementById("playerTurn");
 // var btns = Array.from(buttons);- option but only for modern browsers.
 // --change the node list into one array.
 var btns = Array.prototype.slice.call(buttons);
 // var token =
 
 var game = new Game();
+
+game.startNewGame();
 
 
 for (var i = 0; i < btns.length; i++) {
@@ -29,12 +32,13 @@ for (var i = 0; i < btns.length; i++) {
     if(event.target.innerHTML !== "") {
       return false;
     } else {
-      event.target.innerText = game.currentPlayer.token;
+      event.target.innerHTML = `<img src="${game.currentPlayer.token}" alt="${game.currentPlayer.id}"/>`;
       // pra identificar o local que foi clicado eu pego o index do botao clicado.
       var clikedBtnIndex = btns.indexOf(event.target);
 
 // and add the current player to the game using the method created on the class.
       game.runPlayerClick(clikedBtnIndex);
+      playerTurn.innerText = `May the Force be with you, it's ${game.currentPlayer.id}'s turn!`;
     }
 
     // console.log(event.target.getAttribute("id"));

@@ -61,7 +61,6 @@ h2 {
   /* padding-top: 200px; */
   width: 50%;
   min-width: 450px;
-  /* background-color: hsla(50, 33%, 25%, .75); */
   background-color: transparent;
 
 }
@@ -89,7 +88,7 @@ h2 {
  max-width: 200px;
  max-height: 200px;
  /* cursor: pointer; */
- cursor: url("assets/lightsaber.ani"), default!important;
+ cursor: url("assets/BB-8.cur"), auto; 
 
 
 

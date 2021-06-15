@@ -3,11 +3,13 @@ class Player {
     this.id = infoplayer;
     this.token = infoToken;
     // this.token = `assets/${infoToken}.svg`;
-    this.wins = retrieveWinsFromStorage() || [];
+    // this.wins = retrieveWinsFromStorage() || [];
+    this.numberWins = 0;
     // this.wins = [];
   }
   addWin(winnerBoard) {
     this.wins.push(winnerBoard);
+    this.numberWins++;
 
   }
   saveWinsToStorage() {
@@ -20,7 +22,7 @@ class Player {
     // do i need to instanciate again? loop and instaciate? or just get only the info from wins
 
     var retriveWins = localStorage.getItem(`${this.id}`);
-    this.wins = JSON.parse(retriveWins[this.wins]);?
+    this.wins = JSON.parse(retriveWins[this.wins][this.numberWins]);
     // do i need to return anythig?
 
   }
