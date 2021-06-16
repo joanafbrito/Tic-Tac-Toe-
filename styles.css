@@ -6,16 +6,12 @@
 	font-style: normal;
 }
 
-
-
 body {
-  /* background-color: hsla(50, 33%, 25%, .75); */
   width: 100vw;
   height: 100vh;
   font-family: "StarJediRounded";
   color: #ffffffc7;
   margin: 0;
-
 }
 
 main {
@@ -44,6 +40,15 @@ h2 {
   margin:75px 0;
   text-align: center;
 }
+
+h1 strong.jedi {
+	color: #5e88d7;
+}
+
+ h1 strong.sith {
+ 	color: #b3442d;
+}
+
 h2 {
   font-size: 16px;
 }
@@ -52,19 +57,20 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 25px;
-  width: 175px;
-  /* size:90%; */
+  /* width: 175px; */
+	max-width: 65%;
+	max-height: 75%;
 
 }
 
 .game-board {
-  /* padding-top: 200px; */
   width: 50%;
   min-width: 450px;
   background-color: transparent;
+	text-align: center;
+	margin: auto;
 
 }
-
 
 .buttons {
   display: flex;
@@ -87,11 +93,12 @@ h2 {
  min-height: 140px;
  max-width: 200px;
  max-height: 200px;
- /* cursor: pointer; */
- cursor: url("assets/BB-8.cur"), auto; 
+ cursor: url("assets/BB-8.cur"), auto;
 
-
-
+}
+.buttons button img {
+	max-width: 75%;
+	max-height: 70%;
 }
 
 .buttons button.no-top {
