@@ -30,7 +30,7 @@ for (var i = 0; i < btns.length; i++) {
       }
       return;
     }
-    if (event.target.innerHTML !== "") {
+    if (event.target.innerHTML !== "" || !event.target.id) {
       return false;
     } else {
       event.target.innerHTML = `<img src="${game.currentPlayer.token}" alt="${game.currentPlayer.id}"/>`;
@@ -46,7 +46,7 @@ for (var i = 0; i < btns.length; i++) {
           playerTurn.innerText = `${game.currentPlayer.id} won  !!`
           game.currentPlayer.addWin(game.board);
           if (game.currentPlayer.id === "jedi") {
-            jediNumberWins.innerHTML = `"do. or do not. there is no try."" <br> jedi wins:<br> ${game.currentPlayer.wins.length}`;
+            jediNumberWins.innerHTML = `"do. or do not. there is no try." <br> jedi wins:<br> ${game.currentPlayer.wins.length}`;
             sound = document.getElementById("saber");
             sound.play();
           }else {
