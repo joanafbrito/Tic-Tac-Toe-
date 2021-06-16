@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tick Tac Toe</title>
+  </head>
+  <body>
+    <main>
+      <section id="empireLogo" class="player">
+        <img src="assets/empire_logo.svg" alt="StarWars Logo Empire">
+        <h2 id="sithWins">"this will be a day long remembered" <br>dark side wins:</h2>
+
+      </section>
+      <section class="game-board">
+        <!-- change the text from the HTML in JS file and add the player of the time -->
+        <h1 id="playerTurn">May the Force be with you, it's <strong class="jedi"> jedi</strong>'s turn</h1>
+
+        <div class="buttons">
+          <button id="btn0" class="no-top no-left"></button>
+          <button id="btn1" class ="no-top"></button>
+          <button id="btn2" class ="no-top no-right"></button>
+          <button id="btn3" class="no-left"></button>
+          <button id="btn4"></button>
+          <button id="btn5" class="no-right"></button>
+          <button id="btn6" class ="no-bottom no-left"></button>
+          <button id="btn7" class ="no-bottom"></button>
+          <button id="btn8" class ="no-bottom no-right"></button>
+        </div>
+      </section>
+
+      <section id="rebelLogo" class="player">
+        <img src="assets/logo_rebel.svg" alt="StarWars Logo Rebel">
+        <h2 id="jediWins">“do. or do not. there is no try.” <br>jedi wins: </h2>
+      </section>
+    </main>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/J4x5qIkNS84?autoplay=1&playlist=J4x5qIkNS84&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe> -->
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

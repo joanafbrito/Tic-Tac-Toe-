@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "StarJediRounded";
+	src: url('assets/fonts/StarJediRounded.eot');
+	src: local('☺'), url('assets/fonts/StarJediRounded.woff') format('woff'), url('assets/fonts/StarJediRounded.ttf') format('truetype'), url('assets/fonts/StarJediRounded.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "StarJediRounded";
+  color: #ffffffc7;
+  margin: 0;
+}
+
+main {
+  display:flex;
+  font-family: "StarJediRounded";
+  min-width: 900px;
+  background-image: url("assets/starWars_background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: black;
+
+}
+
+.player {
+  width: 25%;
+  height: 100vh;
+  min-width: 225px;
+  min-height: 250px;
+
+
+}
+
+h1,
+h2 {
+  margin:75px 0;
+  text-align: center;
+}
+
+h1 strong.jedi {
+	color: #5e88d7;
+}
+
+ h1 strong.sith {
+ 	color: #b3442d;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.player img {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  /* width: 175px; */
+	max-width: 65%;
+	max-height: 75%;
+
+}
+
+.game-board {
+  width: 50%;
+  min-width: 450px;
+  background-color: transparent;
+	text-align: center;
+	margin: auto;
+
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  max-width: 600px;
+  max-height: 600px;
+  margin:auto;
+}
+
+.buttons button {
+ width: 16vw;
+ height: 16vw;
+ margin: 0;
+ padding: 0;
+ border: 0.2vw solid #000000ad;
+ background-color: transparent;
+ min-width: 140px;
+ min-height: 140px;
+ max-width: 200px;
+ max-height: 200px;
+ cursor: url("assets/BB-8.cur"), auto;
+
+}
+.buttons button img {
+	max-width: 75%;
+	max-height: 70%;
+}
+
+.buttons button.no-top {
+  border-top-color: transparent;
+}
+
+.buttons button.no-left {
+  border-left-color: transparent;
+}
+
+.buttons button.no-right {
+  border-right-color: transparent;
+}
+
+.buttons button.no-bottom {
+  border-bottom-color: transparent;
+}
