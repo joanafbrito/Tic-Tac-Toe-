@@ -43,6 +43,9 @@ You should be able to play tic-toc-toe, when you click into the empty spaces of 
 
 When you click again, the board will show the token for the second player, until the game has been won or the board empty spaces end, or a draw!In the next click the game starts again!
 
+To have a full experince of the game you should turn on your sound!
+
+![sample](https://user-images.githubusercontent.com/82066350/122153313-8bcd7680-ce17-11eb-92cf-ba14cd281922.gif)
 
 ## Future Additions:
 
