@@ -1,15 +1,15 @@
 # Tic-Tac-Toe-
-##Final solo project Mod1
+#### Final solo project Mod1
 
 
-##Technologies Used##
+#### Technologies Used
 
 **HTML**
 **CSS**
 **JavaScript**
 
-##Instructions for running and viewing
-###Architecture
+#### Instructions for running and viewing
+##### Architecture
 
 This entire application consists of :
 
@@ -37,14 +37,14 @@ This entire application consists of :
 1. A main.js file that contains all DOM related JavaScript
 
 
-##As a user:
+#### As a user:
 
 You should be able to play tic-toc-toe, when you click into the empty spaces of the board it will show the token of the first player.
 
 When you click again, the board will show the token for the second player, until the game has been won or the board empty spaces end, or a draw!In the next click the game starts again!
 
 
-##Future Additions:
+## Future Additions:
 
   * add cards with the winner game board to each of the players.
   * add a player input, to add a name of the player.
