@@ -1,6 +1,9 @@
 # Tic-Tac-Toe-
 #### Final solo project Mod1
 
+### Project Manager 
+[Heather Faerber](https://github.com/hfaerber)
+
 
 #### Technologies Used
 
