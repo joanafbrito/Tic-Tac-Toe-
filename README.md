@@ -1,10 +1,6 @@
 # Tic-Tac-Toe-
 ##Final solo project Mod1
 
- architecture, challenges, wins, and any other reflections
-Screenshots/gifs of your app
-
-Every developer has more ideas than time. As David Allen likes to say “the human brain is for creating ideas, not remembering them.”  IdeaBox is the creative space that allows you to store those genius shower thoughts and daydreams in one spot.  That way you can get them out of your head and concentrate on your day to day tasks.  Come back to IdeaBox when you have more free time so you can really bring your ideas to life!
 
 ##Technologies Used##
 
@@ -43,7 +39,7 @@ This entire application consists of :
 
 ##As a user:
 
-You should be able to play tic-toc-toe, when you click into the empty spaces of the board at your turn it will show the token of the first player.
+You should be able to play tic-toc-toe, when you click into the empty spaces of the board it will show the token of the first player.
 
 When you click again, the board will show the token for the second player, until the game has been won or the board empty spaces end, or a draw!In the next click the game starts again!
 
