@@ -23,7 +23,6 @@ main {
   background-repeat: no-repeat;
   background-position: top center;
   background-color: black;
-
 }
 
 .player {
@@ -31,8 +30,6 @@ main {
   height: 100vh;
   min-width: 225px;
   min-height: 250px;
-
-
 }
 
 h1,
@@ -57,10 +54,8 @@ h2 {
   display: block;
   margin: auto;
   margin-top: 25px;
-  /* width: 175px; */
 	max-width: 65%;
 	max-height: 75%;
-
 }
 
 .game-board {
@@ -94,8 +89,8 @@ h2 {
  max-width: 200px;
  max-height: 200px;
  cursor: url("assets/BB-8.cur"), auto;
-
 }
+
 .buttons button img {
 	max-width: 75%;
 	max-height: 70%;
