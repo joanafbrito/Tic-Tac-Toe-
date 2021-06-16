@@ -4,6 +4,9 @@
 ### Project Manager 
 [Heather Faerber](https://github.com/hfaerber)
 
+### Deploy Link
+ [Play me here!](https://joanafbrito.github.io/Tic-Tac-Toe-/)
+
 
 #### Technologies Used
 
